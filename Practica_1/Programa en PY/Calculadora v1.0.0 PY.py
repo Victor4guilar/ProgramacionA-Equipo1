@@ -5,6 +5,6 @@
 
 N1 = 10
 N2 = 3
-suma = N1 + N2
+suma = N1 - N2
 print("La suma es:", suma)
 
