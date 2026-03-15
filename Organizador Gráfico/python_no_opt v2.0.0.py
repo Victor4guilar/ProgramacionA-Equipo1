@@ -2,7 +2,7 @@
 # Versión: 2.0.0
 # Autor: Gabriel_14/03/2026
 # Descripción: Evolución a reporte tabular con análisis estadístico avanzado.
-# Cambios: Interfaz de consola profesional, manejo de modas múltiples y reporte limpio.
+# MOD: v2.0.0 — Rediseño del programa para generar un reporte estadístico estructurado y soportar múltiples modas.
 
 from collections import Counter
 
