@@ -1,0 +1,22 @@
+proyecto/
+│
+├── Organizador_Grafico.md
+│
+├── c/
+│   ├── c_no_opt_v1.0.0.cpp
+│   ├── c_no_opt_v1.0.1.cpp
+│   ├── c_no_opt_v1.1.0.cpp
+│   ├── c_no_opt_v1.2.0.cpp
+│   └── c_no_opt_v2.0.0.cpp
+│
+├── python/
+│   ├── python_no_opt_v1.0.0.py
+│   ├── python_no_opt_v1.0.1.py
+│   ├── python_no_opt_v1.1.0.py
+│   ├── python_no_opt_v1.2.0.py
+│   └── python_no_opt_v2.0.0.py
+│
+└── results/
+    ├── resultados_c.csv
+    ├── resultados_python.csv
+    └── analisis.txt
