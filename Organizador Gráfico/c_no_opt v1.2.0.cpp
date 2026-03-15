@@ -1,4 +1,4 @@
-/* c_opt.c
+/* c_no_opt.c
    Versión: 1.2.0
    Autor: Jonathaan
    Fecha: 14/03/2026
