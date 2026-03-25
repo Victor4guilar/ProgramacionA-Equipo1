@@ -1,7 +1,7 @@
 //Programa: Calculadora de suma
 //Autor: Equipo 1 SD
-//Versión: 1.1.0
-//Descripción: Se agrega entrada de datos por teclado.
+//Version: 1.1.0
+//Descripcion: Se agrega entrada de datos por teclado.
 
 #include<stdio.h>
 
