@@ -54,4 +54,3 @@ Se evita que el programa falle ante entradas no numéricas.
 Se amplía la funcionalidad del programa.
 Ahora permite realizar suma, resta, multiplicación y división mediante un menú interactivo.
 Se mantiene el manejo de errores en cada operación.
----
