@@ -13,28 +13,28 @@ Formato de registro:
 ## python_no_opt.py
 
 ### 1.0.0 → 1.0.1
-Autor: Gabriel  
+Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08  
 Resumen:
 - Primera optimización del código.
 - Eliminación de estructuras innecesarias en el cálculo de frecuencias.
 - Mejora de claridad en la entrada y salida de datos.
 
 ### 1.0.1 → 1.1.0
-Autor: Axel  
+Autor: Axel de Jesús Ronzón Pérez - IAtevoy  
 Resumen:
 - Implementación de diccionario para almacenar frecuencias.
 - Uso de `get()` para simplificar la actualización de valores.
 - Reducción de estructuras condicionales y mejora de eficiencia.
 
 ### 1.1.0 → 1.2.0
-Autor: Jonathan  
+Autor: Jonathan Sánchez Pérez - Perez-png2  
 Resumen:
 - Uso de `collections.Counter` para conteo optimizado de frecuencias.
 - Implementación de `most_common()` para determinar el modo.
 - Código más compacto y legible.
 
 ### 1.2.0 → 2.0.0
-Autor: Gabriel  
+Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08  
 Resumen:
 - Rediseño del programa hacia un **reporte estadístico estructurado**.
 - Soporte para **múltiples modas**.
@@ -46,28 +46,28 @@ Resumen:
 ## c_no_opt.c
 
 ### 1.0.0 → 1.0.1
-Autor: Victor  
+Autor: Víctor Aguilar Ortiz - Victor4guilar  
 Resumen:
 - Eliminación de líneas redundantes sin funcionalidad.
 - Reducción de operaciones innecesarias en el algoritmo.
 - Código más corto y claro.
 
 ### 1.0.1 → 1.1.0
-Autor: Axel  
+Autor: Axel de Jesús Ronzón Pérez - IAtevoy  
 Resumen:
 - Optimización del algoritmo de verificación de números primos.
 - Se agrega `break` para detener la búsqueda al encontrar el primer divisor.
 - Reducción significativa de iteraciones innecesarias.
 
 ### 1.1.0 → 1.2.0
-Autor: Jonathan  
+Autor: Jonathan Sánchez Pérez - Perez-png2  
 Resumen:
 - Optimización matemática del algoritmo.
 - Verificación de divisores solo hasta `√n`.
 - Eliminación de evaluación de números pares.
 
 ### 1.2.0 → 2.0.0
-Autor: Victor  
+Autor: Víctor Aguilar Ortiz - Victor4guilar  
 Resumen:
 - Rediseño completo del programa.
 - Generación de **reporte estadístico estructurado**.
