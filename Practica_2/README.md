@@ -20,6 +20,8 @@ El programa realiza las siguientes tareas:
 - Guarda los datos en un archivo CSV
 - Genera estadísticas básicas
 - Crea una gráfica de los datos obtenidos
+- Aplica filtro de media móvil (v1.1.0)
+- Detecta condiciones de temperatura (v1.2.0)
 
 ---
 
