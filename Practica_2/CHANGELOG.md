@@ -33,3 +33,17 @@
 
 ---
 
+## 1.2.0 – 2026-04-10 – Víctor Aguilar Ortiz - Victor4guilar  
+### Cambios
+- Corrección en la función save_environment:
+  - Se cambió el uso de matplotlib.pyplot a matplotlib base para obtener la versión correctamente.
+  - Ahora se genera exitosamente el archivo environment.txt.
+- Se implementó una verificación de umbral térmico:
+  - Se define un límite de 25°C.
+  - El sistema analiza los datos al finalizar la adquisición.
+  - Se muestra un mensaje en consola:
+    - "¡ALERTA!" si se detectan temperaturas mayores al umbral.
+    - "Temperatura estable" en caso contrario.
+- Mejora en el resumen final del programa con información del estado térmico.
+
+---
