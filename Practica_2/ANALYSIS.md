@@ -2,46 +2,42 @@ ANALYSIS.md
 
 # Análisis de Resultados: Sistema de Captura de Datos
 Materia: Ingeniería en Instrumentación Electrónica
-Equipo: Victor Aguilar Ortiz, Gabriel Beltrán Amezcua, Jonathan Sánchez Pérez, Axel de Jesús Ronzón Perez,
+Equipo: Victor Aguilar Ortíz, Gabriel Beltrán Amezcua, Jonathan Sánchez Pérez, Axel de Jesús Ronzón Pérez
 Fecha: 10 de Abril de 2026
-
----
+Versión. 1. 2. 0 
 
 1. Introducción
-El presente documento expone el análisis técnico del sistema de registro para sensores de temperatura y fotoceldas. Este proyecto ha progresado desde una etapa básica hasta desarrollar un sistema sólido que incluye filtrado digital de señales, garantizando adherencia a los estándares de integridad de datos y gestión de errores utilizando Python. 
+El presente documento examina el avance técnico del sistema diseñado para el registro de sensores de temperatura y LDR. Este proyecto ha progresado de un registrador simple a una herramienta de monitoreo avanzada que incorpora filtrado digital de señales y detección automática de anomalías térmicas. 
 
 2. Justificación Técnica de Estructuras de Datos
-Para satisfacer las necesidades de la asignatura, se han implementado diversas estructuras, cada una destinada a un propósito particular dentro del flujo de instrumentación:
+Se escogieron estructuras fundamentales de Python para asegurar una gestión eficiente de los datos provenientes de los instrumentos:
 
-* Tuplas (`tuple`): Cada lectura se almacena en el formato `(timestamp, temp, ldr)`. Su característica de inmutabilidad asegura que los datos originados por el ADC permanezcan intactos durante la transmisión de datos. 
-* Listas (`list`): La lista `readings` actúa como un búfer de memoria dinámico. Facilita un almacenamiento ordenado y cronológico de las muestras a través del método `. append()`. 
-* Diccionarios (`dict`): Se aplicaron para los archivos `config` y `stats`. Su diseño de pares clave-valor simplifica la exportación a formato JSON, asegurando que los metadatos del experimento sean fácilmente interpretables tanto por humanos como por sistemas automáticos. 
+* Tuplas (`tuple`): Se emplean para agrupar lecturas `(timestamp, temp, ldr)`. Su característica inmutable garantiza la consistencia de los datos originales frente a modificaciones no deseadas. 
+* Listas (`list`): Funcionan como un buffer dinámico del sistema, permitiendo el almacenamiento secuencial de las muestras a través del método `. append()`. 
+* Diccionarios (`dict`): Utilizados en los objetos `config` y `stats` para estructurar metadatos. Su diseño favorece una exportación ordenada a JSON, facilitando la compatibilidad con otros sistemas analíticos. 
 
-3. Control de Flujo y Robustez
-La fiabilidad del sistema se asienta sobre tres fundamentos de programación:
+3. Evolución y Mejoras del Software
 
-1. Ciclos (`while` y `for`): El ciclo `while` determina la duración precisa del experimento (60 segundos), mientras que los ciclos `for` permiten iterar a través de las listas de datos para aplicar filtros y calcular estadísticas. 
-2. Manejo de Errores (`try / except`): Esencial para la robustez del sistema. En caso de desconexión del puerto serial, el programa continúa su funcionamiento; registra un error y asigna un valor `NaN`, asegurando la continuidad del registro. 
-3. Escritura Atómica: Se utilizó un método de almacenamiento donde primero se crea un archivo temporal que posteriormente se renombra. Esto previene la corrupción del archivo CSV si el script se interrumpe inesperadamente. 
+# 3. 1 Historial de Versiones
+* v1. 0. 1: Se corrigió la simulación mediante la inclusión del módulo `math` para generar señales senoidales más realistas. 
+* v1. 1. 0: Se llevó a cabo la Mejora A (Media Móvil) para disminuir el ruido en la señal de temperatura sin perder la tendencia original. 
+* v1. 2. 0: Se incorporó la Supervisión Automatizada y la rectificación de metadatos en el archivo (`environment. txt`). 
 
-4. Evolución y Mejoras del Software
+# 3. 2 Análisis de la v1. 2. 0: Supervisión y Alerta
+La actualización más reciente transforma el registrador en un sistema de monitoreo inteligente:
+* Umbral Crítico: Se ha definido un límite de 25. 0°C. 
+* Lógica de Decisión: El software analiza el 100% de las muestras al concluir la recolección. En caso de detectar valores superiores, emite una notificación de "¡ALERTA! ".  Esta funcionalidad es esencial en instrumentación para proteger los activos y prevenir fallos por sobrecalentamiento. 
 
-# 4. 1 De v1. 0. 0 a v1. 0. 1: Corrección de Simulación
-Se detectó y corrigió un fallo significativo en el que se utilizaba `random. sin()`. La solución mediante el módulo `math` garantizó que la señal del LDR simulara adecuadamente los ciclos de luz ambiental, validando la lógica de visualización. 
+4. Robustez e Integridad de Datos
+El sistema asegura la continuidad y protección de la información mediante:
+1. Manejo de Errores (`try / except`): Alta tolerancia a fallos en el puerto serie; en tales casos, el sistema asigna `NaN` y continúa funcionando, evitando bloqueos. 
+2. Escritura Atómica: La utilización de archivos temporales evita la corrupción del historial `raw_readings. csv` en situaciones de cortes de energía o cierres inesperados. 
 
-# 4. 2 De v1. 0. 1 a v1. 1. 0: Implementación de la Mejora A
-En la versión final (v1. 1. 0), se añadió un Filtro de Media Móvil (`moving_average`) con una ventana de $n=5$. 
+5. Interpretación de Resultados
+Gracias al filtro de media móvil y a la nueva lógica de alertas, el sistema ofrece:
+- Una señal de temperatura suavizada que permite un mejor control. 
+- Un diagnóstico instantáneo del estado del sensor (Estable vs Alerta). 
+- Un registro exhaustivo del entorno de ejecución (versiones de Python y bibliotecas). 
 
-* Propósito: Disminuir el ruido de alta frecuencia presente en la señal de temperatura. 
-* Resultado: Como se observa en `plot. png`, la línea de "Temp filtrada" atenúa las variaciones de ruido gaussiano, proporcionando una lectura más estable sin perder la tendencia térmica real. 
-
-5. Interpretación de Archivos Generados
-
-| Archivo | Formato | Contenido Técnico |
-| :--- | :--- | :--- |
-| `raw_readings. csv` | Texto Plano (CSV) | Datos en bruto y filtrados con marca de tiempo ISO 8601. |
-| `metadata. json` | JSON | Configuración del sistema y estadísticas (Media, Desviación Estándar). |
-| `grafico. png` | Imagen (PNG) | Comparación visual entre la señal sin tratar y la señal elaborada. |
-
-6. Cierre
-El trabajo une de manera exitosa principios complejos de programación en el ámbito de la electrónica. La evolución hacia la versión 1. 1. 0 evidencia que el programa no solo recopila información, sino que también la elabora para optimizar la calidad de los datos, una habilidad esencial para cualquier profesional en instrumentación.
+6. Conclusión
+La versión 1. 2. 0 representa la culminación de un proceso ingenieril integral: desde la recolección de datos en crudo hasta su procesamiento digital y la toma de decisiones automatizadas. El sistema se ha convertido en una herramienta operativa para el monitoreo de procesos térmicos.
