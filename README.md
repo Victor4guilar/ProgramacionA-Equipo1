@@ -1,2 +1,2 @@
-# SistemasDEquipo-
-Repositorio para la clase de Sistemas Digitales -   Equipo 1
+# ProgramaciónAEquipo-1
+Repositorio para la clase de Programación Avanzada -   Equipo 1
