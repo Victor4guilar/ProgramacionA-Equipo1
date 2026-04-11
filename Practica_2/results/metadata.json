@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-04-10T02:39:50Z",
+  "timestamp": "2026-04-11T05:25:22Z",
   "config": {
     "mode": "sim",
     "port": null,
     "baud": 115200,
     "duration_seconds": 60,
     "sample_interval_s": 1,
-    "script": "src_run_acquisition v1.0.1.py",
+    "script": "src_run_acquisition v1.1.0.py",
     "version": "1.0.1"
   },
   "stats": {
     "temperature": {
-      "mean": 22.294,
-      "min": 21.76,
-      "max": 22.87,
-      "std": 0.273,
+      "mean": 22.329,
+      "min": 21.68,
+      "max": 23.29,
+      "std": 0.267,
       "count": 60
     },
     "ldr": {
-      "mean": 433.217,
-      "min": 380,
-      "max": 664,
-      "std": 46.312,
+      "mean": 435.133,
+      "min": 389,
+      "max": 679,
+      "std": 47.732,
       "count": 60
     }
   }

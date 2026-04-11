@@ -5,12 +5,15 @@ run_acquisition.py
 Proyecto de ejemplo: adquisición de lecturas de temperatura y LDR durante 1 minuto,
 guardado en CSV y generación de una gráfica.
 Autor: jonathan sanchez perez
-Versión: 1.1.0
+Versión: 1.2.0
 
-Cambios en v1.1.0:
-# mejora A implementada:
-Se añadió un filtro de media móvil para reducir el ruido en la señal de temperatura.
-Se integró en el procesamiento, almacenamiento (CSV) y visualización (gráfica).
+Cambios en v1.2.0:
+# Se hizo una correción en la cual se ajustó la función save_environment
+ para importar matplotlib base en lugar de pyplot al consultar la versión. 
+ Esto permitió la creación exitosa del archivo environment.txt. Así mismo,
+ se implementó una verificación de umbral térmico (25°C), ahora el programa
+ analiza los datos al finalizar y emite un mensaje de "¡ALERTA!" o "Estable" 
+ en el resumen.
 """
 
 import argparse
