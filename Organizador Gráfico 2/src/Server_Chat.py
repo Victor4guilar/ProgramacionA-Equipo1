@@ -6,14 +6,13 @@ HOST = '0.0.0.0' #Escucha en todas las interfaces de red
 PORT = 5000      #Puerto donde trabajará el servidor
 #Configuración del sistema de logs
 logging.basicConfig(
-    filename='../results/logs/server_test1.log', #Ruta del archivo de log
+    filename='server_test1.log', #Ruta del archivo de log
     level=logging.INFO,                          #Nivel de registro (INFO)
     format='%(asctime)s - %(message)s'           #Formato del mensaje
 )
 
 #FUNCIÓN PARA RECIBIR MENSAJES
 def recibir_mensajes(conn):                     #Función que recibe datos del cliente
-    """Recibe mensajes del cliente continuamente"""
     while True:                                 #Bucle infinito para escuchar mensajes
         try:
             data = conn.recv(1024)              #Recibe hasta 1024 bytes
@@ -23,27 +22,26 @@ def recibir_mensajes(conn):                     #Función que recibe datos del c
             mensaje = data.decode('utf-8')      #Convierte bytes a texto
             print(f"\nCliente: {mensaje}")      #Imprime mensaje recibido
             logging.info(f"Cliente: {mensaje}") #Guarda mensaje en log
-        except:                                 #Si ocurre un error
-            print("Error al recibir mensaje.")  #Muestra error
+        except Exception as e:                                 #Si ocurre un error
+            print("Error al recibir mensaje:", e)  #Muestra error
             break                               #Termina el ciclo
 
 #FUNCIÓN PARA ENVIAR MENSAJES
 def enviar_mensajes(conn):                        #Función que envía datos al cliente
-    """Permite al servidor enviar mensajes al cliente"""
     while True:                                   #Bucle infinito para enviar mensajes
         try:
             mensaje = input("Tú: ")               #Lee mensaje desde teclado
             conn.sendall(mensaje.encode('utf-8')) #Envía mensaje codificado
             logging.info(f"Servidor: {mensaje}")  #Guarda mensaje en log
 
-        except:                                   #Si ocurre un error
-            print("Error al enviar mensaje.")     #Muestra error
+        except Exception as e:                                   #Si ocurre un error
+            print("Error al enviar mensaje:", e)     #Muestra error
             break                                 #Termina el ciclo
 
 #FUNCIÓN PRINCIPAL
 def iniciar_servidor():                          #Función principal del servidor
-    """Inicializa el servidor TCP"""
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  #Crea socket TCP
+    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) #reutiliza inmediatamente una IP y un puerto
     server.bind((HOST, PORT))                    #Asocia IP y puerto al socket
     server.listen(1)                             #Escucha máximo 1 cliente
     print(f"Servidor escuchando en {HOST}:{PORT}...")  #Muestra estado del servidor
