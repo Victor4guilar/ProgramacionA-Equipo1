@@ -42,7 +42,9 @@
 
 ### Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
 * docs: creación del archivo `README.md` con la descripción general del proyecto
-
+* feat: incorporación de scripts de automatización en `/scripts`
+    * `create_hotspot.sh`
+    * `create_hotspot_win.bat`
 
 
 ---
