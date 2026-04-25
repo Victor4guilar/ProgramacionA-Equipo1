@@ -20,11 +20,15 @@ def recibir_mensajes(cliente):
             if not data:
                 print("\nServidor desconectado.")
                 break
-            print(f"\nServidor: {data.decode('utf-8')}")
+
+            mensaje = data.decode('utf-8')
+            print(f"\nServidor: {mensaje}")
+            logging.info(f"Servidor: {mensaje}")  
+
         except Exception as e:
             print("Error al recibir:", e)
             break
-
+        
 def enviar_mensajes(cliente):
     while True:
         try:
@@ -35,11 +39,12 @@ def enviar_mensajes(cliente):
                 break
 
             cliente.sendall(mensaje.encode('utf-8'))
+            logging.info(f"Cliente: {mensaje}")  # 🔥 AGREGADO
 
         except Exception as e:
             print("Error al enviar:", e)
             break
-
+        
 # Función principal del Cliente
 def iniciar_cliente():
     # 1. Crear el socket (TCP)
