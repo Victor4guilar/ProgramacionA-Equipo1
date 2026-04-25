@@ -1,1 +1,3 @@
-Requisitos
+# Este proyecto utiliza únicamente las librerías estándar de Python.
+# No se requieren instalaciones externas vía pip.
+# Python version >= 3.14.3
