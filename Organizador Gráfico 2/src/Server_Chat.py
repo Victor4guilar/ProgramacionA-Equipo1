@@ -31,6 +31,9 @@ def enviar_mensajes(conn):                        #Función que envía datos al 
     while True:                                   #Bucle infinito para enviar mensajes
         try:
             mensaje = input("Tú: ")               #Lee mensaje desde teclado
+            if mensaje.lower() == "exit":         #Para salir de la comunicación se escribe exit
+                conn.close()                      #Termina la conección
+                break                             #Termina el ciclo
             conn.sendall(mensaje.encode('utf-8')) #Envía mensaje codificado
             logging.info(f"Servidor: {mensaje}")  #Guarda mensaje en log
 
@@ -38,9 +41,7 @@ def enviar_mensajes(conn):                        #Función que envía datos al 
             print("Error al enviar mensaje:", e)     #Muestra error
             break                                 #Termina el ciclo
 
-            if mensaje.lower() == "exit":   #Para salir de la comunicación se escribe exit
-                conn.close()                #Termina la conección
-                break                       #Termina el ciclo
+
 #FUNCIÓN PRINCIPAL
 def iniciar_servidor():                          #Función principal del servidor
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  #Crea socket TCP
