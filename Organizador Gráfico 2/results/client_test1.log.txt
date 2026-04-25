@@ -1,0 +1,180 @@
+2026-04-24 19:11:03,084 - Cliente: hola que tal?
+2026-04-24 19:11:12,920 - Cliente: bjk
+2026-04-24 19:11:14,449 - Servidor: Hola y bienbenido al SER
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:11:25,411 - Servidor: No me vuelvas a interrumpir
+2026-04-24 19:11:31,509 - Cliente: estamos probando la conexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:11:38,511 - Cliente: error de dedo, jajaja
+2026-04-24 19:11:43,581 - Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:11:49,908 - Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:12:09,330 - Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:12:20,107 - Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:12:27,133 - Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:12:33,179 - Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:12:44,409 - Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:13:02,161 - Cliente: VERIFICAR LA CONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:13:09,289 - Cliente: SOY EL CLIENTE
+2026-04-24 19:13:19,018 - Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:13:28,415 - Cliente: :)
+Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:13:40,669 - Servidor: Como se llama?
+Cliente: :)
+Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+2026-04-24 19:13:52,527 - Cliente: 
+Servidor: Como se llama?
+Cliente: :)
+Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+ghjkl
+2026-04-24 19:13:57,037 - Servidor: 
+Cliente: 
+Servidor: Como se llama?
+Cliente: :)
+Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+ghjkl
+Hkmnf
+2026-04-24 19:14:00,053 - Servidor: exit
+2026-04-24 19:14:02,943 - Cliente: 
+Servidor: exit
+Cliente: 
+Servidor: Como se llama?
+Cliente: :)
+Servidor: Uhmm
+Cliente: SOY EL CLIENTEONEXION CON EL SERVER, 
+Servidor: Bueno que quieresCLIENTE
+Cliente: XD
+Servidor: .-.
+Cliente: tranquilo viejo
+Servidor: Te dije que no me interrumpieras, sino te baeare del SRVER
+Cliente: tranquilo, jajja
+Servidor: Te quedo claro
+Cliente: error de dedo, jajajaonexion cliente - servidor
+Servidor: No me vuelvas a interrumpir
+Cliente: bjka que tal?
+VERcvb
+ghjkl
+Hkmnf
+cvhjk
