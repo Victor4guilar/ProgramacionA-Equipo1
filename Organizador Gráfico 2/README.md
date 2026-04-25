@@ -48,7 +48,7 @@ Se incorporó el módulo `logging` de Python para registrar cada evento ocurrido
 * Depuración: Permitir la identificación de las causas subyacentes de desconexiones inesperadas o fallas en el protocolo mediante el registro de excepciones. 
 * Validación de Datos: Asegurarse de que la decodificación de caracteres (UTF-8) se ha realizado correctamente en ambos extremos. 
 
-#4. Descripción de la Lógica de Conexión
+# 4. Descripción de la Lógica de Conexión
 
 4.1. Lógica del Servidor (Host)
 
