@@ -39,7 +39,7 @@ def enviar_mensajes(cliente):
                 break
 
             cliente.sendall(mensaje.encode('utf-8'))
-            logging.info(f"Cliente: {mensaje}")  # 🔥 AGREGADO
+            logging.info(f"Cliente: {mensaje}") 
 
         except Exception as e:
             print("Error al enviar:", e)
