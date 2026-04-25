@@ -1,4 +1,4 @@
-# Informe Técnico de Integración: Sistema P2P de Mensajería mediante TCP
+# Sistema P2P de Mensajería mediante TCP
 
 # 1. Introducción y Objetivo del Proyecto
 
