@@ -1,6 +1,5 @@
 Un **socket** es el punto final de un enlace de comunicación bidireccional entre dos programas que se ejecutan en una red. Es la interfaz que permite que el software se conecte al hardware de red para enviar y recibir datos.
 
-Para tu Notepad, aquí tienes el resumen clave:
 
 
 **DEFINICIÓN DE SOCKET**
