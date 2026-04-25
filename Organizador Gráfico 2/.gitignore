@@ -1,0 +1,29 @@
+!.gitignore
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.env
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs (permitir logs de pruebas)
+*.log
+!results/logs/
+!results/logs/*.log
+
+# Archivos temporales
+*.tmp
+
+# Configuración de VS Code
+.vscode/
+
+# Spyder
+.spyproject/
