@@ -38,6 +38,9 @@ def enviar_mensajes(conn):                        #Función que envía datos al 
             print("Error al enviar mensaje:", e)     #Muestra error
             break                                 #Termina el ciclo
 
+            if mensaje.lower() == "exit":   #Para salir de la comunicación se escribe exit
+                conn.close()                #Termina la conección
+                break                       #Termina el ciclo
 #FUNCIÓN PRINCIPAL
 def iniciar_servidor():                          #Función principal del servidor
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  #Crea socket TCP
